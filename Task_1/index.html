@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>Mostafa Mahmoud</h1>
+        <style>
+            h1{
+                text-align: center;
+            }
+        </style>
+    </header>
+    <nav>
+        <style>
+            nav{
+                text-align: center;
+            }
+        </style>
+        <a href="#about_me">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section id="about_me">
+        <h2>About Me</h2>
+        <img src="resources/profile.jpg" alt="profile picture" width="150" >
+        <p>"Hi, I'm a student at the Faculty of Computers and Artificial Intelligence (FCAI).<br>
+            I'm passionate about technology and currently exploring front-end development.<br>
+            As a beginner, I'm learning HTML, CSS, and JavaScript to build interactive and responsive websites.<br>
+            I'm excited to improve my skills and work on real-world projects!"</p>
+            
+    </section>
+    <hr>
+    <section id="projects">
+        <h2>My Projects</h2>
+    
+        <div>
+            <h3>Project 1: Portfolio Website</h3>
+            <p>A personal portfolio website showcasing my skills, projects, and contact information using HTML, CSS, and JavaScript.</p>
+        </div>
+    
+        <div>
+            <h3>Project 2: To-Do List App</h3>
+            <p>A simple to-do list web application that allows users to add, remove, and mark tasks as complete using JavaScript.</p>
+        </div>
+    
+        <div >
+            <h3>Project 3: Weather App</h3>
+            <p>A weather forecast web app that fetches real-time data from an API and displays weather conditions based on the user's location.</p>
+        </div>
+    </section>
+    <hr>
+    <section id="skills">
+        <h2>My Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Git & GitHub</li>
+            <li>Qt Widget Apps using C++</li>
+            <li>SQL</li>
+        </ul>
+    </section>
+    <hr>
+    <section>
+        <h2>Projects</h2>
+        <style>
+            table ,th , td{
+                border: 1px solid black;
+            }
+        </style>
+        <table style="width: 100%;">
+            <tr>
+                <th>Project Name</th>
+                <th>Description</th>
+                <th>Technologies Used</th>
+            </tr>
+            <tr>
+                <td>Portfolio Website</td>
+                <td>A personal website showcasing my skills and projects.</td>
+                <td>HTML, CSS, JavaScript</td>
+            </tr>
+            <tr>
+                <td>To-Do List App</td>
+                <td>A simple task manager with add, remove, and complete functions.</td>
+                <td>JavaScript, HTML, CSS</td>
+            </tr>
+            <tr>
+                <td>Weather App</td>
+                <td>Displays real-time weather data based on user location.</td>
+                <td>JavaScript, API, CSS</td>
+            </tr>
+            
+        </table>
+    </section>
+    <hr>
+    <section id="contact">
+        <h2>Contact Section</h2>
+        <form>
+            <label for="name">Name</label><br>
+            <input type="text" id="name" required><br>
+            <label for="email">E-mail</label><br>
+            <input type="email" id="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+            <input type="submit" name="submit" id="submit">
+        </form>
+    </section>
+    <hr>
+    <section>
+        <h2>Watch My Video</h2>
+        <iframe width="420" height="315" src="https://www.youtube.com/embed/PUS4PFpJm8k?si=N54VaPf7Y9CLAtUl"></iframe>
+        <video  width="420" height="315" controls>
+            <source src="resources/Ramadan.mp4" type="video/mp4">
+        </video>
+    </section>
+    <hr>
+    <footer>
+        <p>&#169; 2025 My Portfolio. All rights reserved.</p>
+        
+        <p>Visit my <a href="https://w3schools.com" target="_blank">website</a>.</p>
+    
+        <p><a href="resources/Resume.pdf" download="My_Resume.pdf">Download My Resume</a></p>
+    </footer>
+    
+</body>
+</html>
