@@ -1,0 +1,294 @@
+body {
+    font-family:'Segoe UI', sans-serif;
+    margin: 0 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5px 10px;
+    margin: 10px 10px;
+}
+.logo::before{
+    content: url(./images/download.svg);
+    margin-right: 1rem;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    margin-left: 20;
+}
+.nav{
+    display: flex;
+    align-content: center;
+}
+.links{
+    text-decoration: none;
+    color: black;
+    opacity: 0.5;
+    padding-inline: 10px;
+    transition: opacity 0.5s;
+}
+#Login{
+    font-weight: bold;
+}
+i {
+    opacity: 0.5;
+    font-size: 24px; 
+    color: black; 
+    margin: 0px 10px; 
+    transition: opacity 0.5s;
+}
+i:hover,
+.links:hover{
+    opacity: 1;
+}
+.hero{
+    display: flex;
+}
+.hero-text , .hero-image{
+    width: 50%;
+
+}
+.hero-text  {
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    padding-top: 50px;
+    
+}
+.hero-text > *  {
+    margin: 20px 120px ;
+}
+.hero-text p  {
+    font-size: 12px;
+}
+#p2 {
+    color: #50BF90;
+}
+.hero-text button{
+    padding: 10px 30px;
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    transition: all 0.5s;
+}
+.hero-text button:hover{
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+}
+.title{
+    margin-top: 80px;
+    margin-left: 130px;
+}
+.genres , .SFX , .producer-list {
+    display: grid;
+    margin: auto;
+    width: 100%; 
+    max-width: 80%;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5px;
+    justify-content: center;
+    
+}
+
+
+.genres div , .SFX div ,.producer-list div ,.info-list div {
+    padding: 40px;
+    font-size: 10px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.5s ;
+}
+.genres div:hover, 
+.SFX div:hover, 
+.producer-list div:hover, 
+.info-list div:hover {
+    color: black;
+    background-image: none;
+    background-color: #F2F2F2;
+}
+.info-list div:hover,
+.producer-list div:hover {
+    color: white;
+    background-color: #e2d5d5;
+    text-shadow: 2px 2px 2px black;
+}
+.producer-list div , .info-list div{
+    color: black;
+    background-color: #F2F2F2;
+    padding: 20px 40px;
+}
+.platform-info , .platform-stats{
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    
+}
+.platform-info > div , .platform-stats > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.platform-stats div{
+    margin-left: 25px;
+}
+.platform-info p , .platform-stats p{
+    opacity: 0.5;
+    font-size: 20px;
+    margin: 5px 0px;
+}
+.platform-info h2 , .platform-stats h2{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.stats-list{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: space-evenly;
+    line-height: 20px;
+    
+}
+
+.info-list{
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5px;
+    margin: 25px 0px;
+    margin-right: 40px;
+    
+}
+.platform-info img , .platform-stats img{
+    width: 500px;
+}
+
+
+.Trap{
+    background-image: url(./images/genres/trap@2x.png) ;
+}
+.R-B-Soul{
+    background-image: url(./images/genres/r-b-soul@2x.png) ;
+    
+}
+.Drill{
+    background-image: url(./images/genres/drill@2x.png) ;
+}
+.Future-Pop{
+    background-image: url(./images/genres/future_pop@2x.png) ;
+}
+.Emo-Rap{
+    background-image: url(./images/genres/emo_rap@2x.png) ;
+}
+.Reggaeton{
+    background-image: url(./images/genres/latin_reggaeton@2x.png) ;
+}
+.HIP-HOP {
+    grid-column: span 2;
+    background-image: url(./images/genres/rap_hip_hop@2x.png) ;
+}
+.AFROBEAT {
+    grid-column: span 2;
+    background-image: url(./images/genres/afrobeat@2x.png) ;
+}
+.INDIE-RNB {
+    grid-column: span 2;
+    background-image: url(./images/genres/rap_hip_hop@2x.png) ;
+}
+
+
+.TENET{
+    background-image: url(./images/films/tenet.jpg) ;
+    filter: grayscale(100%);
+}
+.WESTWORLD{
+    background-image: url(./images/films/west-world.jpg) ;
+    filter: grayscale(100%);
+}
+.THE-REVENANT{
+    background-image: url(./images/films/the-revenant.png) ;
+    filter: grayscale(100%);
+}
+.MAD-MAX{
+    background-image: url(./images/films/mad-max.jpg) ;
+    filter: grayscale(100%);
+}
+.BLACK-SWAN{
+    background-image: url(./images/films/black-swan.jpg) ;
+    filter: grayscale(100%);
+}
+.BABY-DRIVER{
+    background-image: url(./images/films/baby-driver.jpg) ;
+    filter: grayscale(100%);
+}
+.YOUTUBE , .INSTAGRAM , .TV-FILM{
+    grid-column: span 2;
+}
+.BROADCAST , .ADVERTISING{
+    grid-column: span 3;
+}
+@media (max-width: 900px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-between;
+    }
+    .nav {
+        gap: 10px;
+        margin: auto;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .hero {
+        flex-direction: column;
+    }
+    .hero-text {
+        width: 100%;
+        order: 2;
+    }
+    .hero-image{
+        width: 100%;
+        
+        order: 1;
+    }
+    .genres, .SFX, .producer-list, .info-list {
+        width: 100% ;
+        max-width: 60% ;
+        grid-template-columns: repeat(2, 1fr) ; 
+        padding: 10px ;
+    }
+    
+    .AFROBEAT , .HIP-HOP {
+        grid-column: span 1;
+    }
+    .YOUTUBE ,.INSTAGRAM, .TV-FILM ,.BROADCAST{
+        grid-column: span 1;
+    }
+    .ADVERTISING{
+        grid-column: span 2;
+    }
+    
+    .platform-info , .platform-stats {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .platform-stats img {
+        order: 1;
+    }
+}
