@@ -19,7 +19,7 @@ function loadTask(){
     if(savedTasks){
         tasks = JSON.parse(savedTasks)
     }
-    filterTasks()
+    filterTasks();
 }
 
 function setupEventListeners(){
@@ -70,9 +70,6 @@ function addTask() {
 function filterTasks(){
     let filteredTasks = []
     const selectedFilter = document.querySelector('input[type="radio"]:checked').id;
-
-    console.log(selectedFilter)
-
     switch(selectedFilter) {
         case "value-1":
             filteredTasks = tasks.filter(task => !task.completed);
